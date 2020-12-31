@@ -20,11 +20,8 @@ This project is divided into two parts as Packing and Unpacking.
 Packing Activity :
 • In case of Packing activity we accept directory name and file name from user.
 • We have to create new regular file as the name specified by the user.
-• Now open the directory and traverse each file from that directory. In newly created file
-write Metadata as header and actual file data in sequence.
-• While writing data perform encryption.
-• Each name of file ,its size and checksum should be written in log file which gets
-created in system directory.
+• Now open the directory and traverse each file from that directory. In newly created file write Metadata as header and actual file data in sequence.
+• Each name of file ,its size and checksum should be written in log file which gets created in system directory.
 • After packing display packing report.
 
 
