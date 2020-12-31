@@ -75,7 +75,6 @@ class Packer
 			outstream = new FileOutputStream(FileName);
 
 			// Set the current working directory for folder traversal
-			// System.setProperty("user.dir",FolderName);
 			
 			TravelDirectory(FolderName);
 		}
@@ -89,13 +88,13 @@ class Packer
 	{
 		File directoryPath = new File(path);
 		int counter = 0;
+		
 		// Get all file names from directory
 		File arr[] = directoryPath.listFiles();
 
 		System.out.println("-------------------------------");
 		for(File filename : arr)
 		{
-			//System.out.println(filename.getAbsolutePath());
 			
 			if(filename.getName().endsWith(".txt"))
 			{
@@ -145,9 +144,7 @@ class Packer
 		}
 		catch(Exception obj)
 		{}
-		// System.out.println("Header : "+temp.length());
-
-		// Packing logic
+		
 	}
 }
 
